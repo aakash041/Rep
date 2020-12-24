@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MyFoodArea</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+      <link rel="stylesheet" type="text/css" href="pr01.css" />
+      <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            
+  <div id="ow">
+     <div class="logo"> 
+         <img src="welogo.jpg" class="logo01">
+         </div>
+  <div id="center">          
+  <ul class="bar">
+  <li><a href="#"> <i class="fa fa-home"></i> Home</a></li>
+  <li><a href="#"><i class="fa fa-user-circle "></i> Acount</a></li>
+
+  <li><a href="#"><i class="fa fa-user"></i> About us</a>
+<div class="about-me">
+   <ul> <li><a href="#home">Team</a></li><br></br>
+   <li> <a href="#about">Vission</a></li><br><br>
+   <li> <a href="#contact">Leagel</a></li></ul>
+  </div>
+</li>
+
+<li><a href="#"><i class="fa fa-history"></i> Offers</a></li>    
+    </div>
+   
+            
+            
+ <div class="Bt01">    
+                       <button id="btn01">Sign-up</button>  
+                       <button id="btn02">Login</button>
+  </div>
+   </div>
+
+<div class="popup">
+<div class="pop-content">
+    <img src="close-128.webp" alt="close" class="close" >
+<img src="user01.webp" alt="user"><br><br>
+<form action="Login.php" method="post">
+<input type="text" placeholder="username" id="uname"><br><br>
+<input type="password" placeholder="password" ><br><br>
+<button id="btn02">Login</button>
+</form>
+</div>
+</div>
+        
+        
+ <div class="popup01">
+<div class="pop-content01">
+  
+<img src="close-128.webp" alt="close" class="close" >
+<img src="user01.webp" alt="user"><br><br>
+
+<form action="http://localhost:8080/project/sign.php" method="post">
+    
+<!--<input type="text" placeholder=" Enter Username" class="bg01"><br> -->
+
+<input type="email" placeholder="Enter Vale Emali" id="email" name="name" class="bg01"><br>
+<input type="password" placeholder="create password" class="bg01" name="password"><br>
+<button id="btn01">Sig-up</button>
+</form>
+</div>
+</div>
+        
+ <div class="searchbar">
+       <div class="foodera"> FOODERA  </div>
+           <div class="foodera01">Discover best Food,Places,Drinks.</div>
+    <div class="searchbar-text">
+        <a class="Searchbutton" href="#"><i class="fa fa-search" aria-hidden="true"></i></a><input type="text" placeholder="Search for dish,state" class="searchbar-text01">
+        </div>
+        
+        
+ </div>
+        
+ <section class="service-container">
+     <h1 class="service-heading">
+         Our Services
+     </h1>
+     <div id="services">
+         <div class="box">
+             <img src="delivery.jpeg" alt="">
+             <h1 class="delivery">Food Delivery</h1>
+             <p class="center">Retail food delivery is a courier service in which a restaurant, store, or independent 
+                 food-delivery company delivers food to a customer. An order is typically made either 
+                 
+                 </p>  
+         </div>
+          <div class="box">
+             <img src="order.jpeg" alt="">
+             <h1 class="delivery">Order Now</h1>
+             <p class="center">Retail food delivery is a courier service in which a restaurant, store, or independent 
+                 food-delivery company delivers food to a customer. An order is typically made either 
+                 
+                 </p>  
+         </div>
+         
+                   <div class="box">
+             <img src="take.jpeg" alt="">
+             <h1 class="delivery">Take-Away</h1>
+             <p class="center">Retail food delivery is a courier service in which a restaurant, store, or independent 
+                 food-delivery company delivers food to a customer. An order is typically made either 
+                 
+                 </p>  
+         </div>
+         </div>
+ </section>
+     
+    <section id="client-section">
+        <h1 class="client-heading">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo3.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="logo2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo4.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+        
+  
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input class="" type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                 <div class="form-group">
+                    
+                    <input type="submit" value="submit" id="submit">
+                </div>
+        </div>
+    </section>
+        
+      
+            
+            
+            
+<script>
+document.getElementById("btn02").addEventListener("click",function(){
+      document.querySelector(".popup").style.display="flex";
+      })
+      
+document.querySelector(".close").addEventListener("click",function(){
+      document.querySelector(".popup").style.display="none";
+      })
+
+document.getElementById("btn01").addEventListener("click",function(){
+      document.querySelector(".popup01").style.display="flex";
+      })
+      
+document.querySelector(".close").addEventListener("click",function(){
+      document.querySelector(".popup01").style.display="none";
+      })
+
+
+
+</script>
+    
+         
+        
+    </body>
+</html>
